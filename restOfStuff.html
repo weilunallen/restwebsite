@@ -1,0 +1,526 @@
+	<div class='show-for-large-up videoWrapper'>
+		<div class='pattern'></div>
+		<video autoplay loop class="fillWidth">
+			<source src="img/test.mp4" type="video/mp4"/>
+		</video>
+	</div> <!-- end video -->
+	<div id='redBg' class="show-for-large-up zindexUp">
+		<div class='row' id='mainIndex'>
+			<h1 class="small-12 large-6 columns">
+				<a class="svgWrapper hide-for-large-up">
+						<object data="img/homeLogo.svg" type="image/svg+xml" class="svgContent">
+							<!-- <img src="img/homeLogo.jpg" alt="Good Fortune Restaurant"> -->
+						</object>
+				</a>
+				<a class="svgWrapper show-for-large-up">
+						<object data="img/strightLogo.svg" type="image/svg+xml" class="svgContent">
+							<!-- <img src="img/homeLogo.jpg" alt="Good Fortune Restaurant"> -->
+						</object>
+				</a>
+			</h1>
+		</div><!-- end redBg -->
+	</div>
+			<div class="row groupMenu">
+		<a href="#" class='small-2 columns button' onclick="expend('#mainNav');"><img src='img/menu.png' alt="MENU"/></a>
+		<a href="#" class="small-5 columns secondButton" onclick="expend('#rsvp');">Direction</a>
+		<a href="#" class="small-5 columns thirdButton" onclick="expend('#num');">Call</a>
+	</div>
+			<div class="row zindexUp">
+		<nav class="small-12 columns hide popDown" id='mainNav'>
+			<ul>
+				<li><a href="#main">Home</a></li>
+				<hr />
+				<li><a href="#dimsum">Dim Sum</a></li>
+				<hr />
+				<li><a href="#dinner">Dinner</a></li>
+				<hr />
+				<li><a href="#banquet">Banquet</a></li>
+				<hr />
+				<li><a href="#vip">VIP Room</a></li>
+				<hr />
+				<li><a href="#contact">Contact</a></li>
+				<hr />
+			</ul>
+		</nav>
+		<section id='rsvp' class='hide popDown'>
+			<form>
+				<div class='radio'>Prefix / Title :
+					<label for='mr'>Mr.</label>
+					<input type="radio" id='mr' value='mr' name="prefix"/>
+					<label for='mr'>Ms.</label>
+					<input type="radio" id='mr' value='mr' name="prefix"/>
+				</div>
+				<div>
+					<label for='f_name'>First Name</label>
+					<input type="text" id='f_name'/>
+					<label for='l_name'>Last Name</label>
+					<input type='text' id='l_name'/>
+					<label for='phone'>Phone Number</label>
+					<input type='text' id='phone' pattern='\d*'/>
+				</div>
+				<div class="radio">
+					Type : 
+					<label for='dimsum'>Dim Sum</label>
+					<input type="radio" id='dimsumType' value="dimsum"/>
+					<label for='dimsum'>Dinner</label>
+					<input type="radio" id='dinner' value="dinner"/>
+					<label for='banquet'>Banquet</label>
+					<input type="radio" id='banquet' value="banquet"/>
+				</div>
+				<select name="month" id="month">
+					<option value="1">January</option>
+					<option value="2">February</option>
+					<option value="3">March</option>
+					<option value="4">April</option>
+					<option value="5">May</option>
+					<option value="6">June</option>
+					<option value="7">July</option>
+					<option value="8">August</option>
+					<option value="9">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</select>
+				<select name="day" id="day">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+				</select>
+				<select name="time" id="time">	
+						<optgroup label="DIM SUM">
+							<option value="9:00 AM">9:00 AM</option>
+							<option value="9:30 AM">9:30 AM</option>
+							
+							<option value="10:00 AM">10:00 AM</option>
+							<option value="10:30 AM">10:30 AM</option>
+							
+							<option value="11:00 AM">11:00 AM</option>
+							<option value="11:30 AM">11:30 AM</option>
+							
+							<option value="12:00 PM">12:00 PM</option>
+							<option value="12:30 PM">12:30 PM</option>
+							
+							<option value="1:00 PM">1:00 PM</option>
+							<option value="1:30 PM">1:30 PM</option>
+						</optgroup>
+						<optgroup label="DINNER OR BANQUET">
+							<option value="6:00 PM">6:00 PM</option>
+							<option value="6:30 PM">6:30 PM</option>
+				
+							<option value="7:00 PM">7:00 PM</option>
+							<option value="7:30 PM">7:30 PM</option>
+							
+							<option value="8:00 PM">8:00 PM</option>
+							<option value="8:30 PM">8:30 PM</option>
+							
+							<option value="9:00 PM">9:00 PM</option>
+							<option value="9:30 PM">9:30 PM</option>
+							
+							<option value="10:00 PM">10:00 PM</option>
+							<option value="10:30 PM">10:30 PM</option>
+							
+							<option value="11:00 PM">11:00 PM</option>
+							<option value="11:30 PM">11:30 PM</option>
+						</optgroup>
+				</select>
+			</form>
+		</section>
+		<address id='contact' class="row hide">
+				<dl>
+					<div class="small-12 columns">
+						<dt>Address :</dt>
+							<dd>46-45 Kissena Blvd
+								Flushing, NY 11355
+							</dd>
+						<hr />
+					</div>
+					<div class="small-12 columns">
+						<dt>E-mail :</dt>
+							<dd>info(at)FortuneRestaurant.com</dd>
+						<hr />
+					</div>
+					<div class="small-6 columns">
+						<dt >TEL :</dt>
+							<dd>7718-888-8998</dd>
+						<hr />
+					</div>
+					<div class="small-6 columns">
+						<dt> FAX : </dt>
+							<dd>718.888.8998</dd>
+						<hr />
+					</div>
+				</dl>
+		</address>
+		<section id='map' class='columns'>
+		</section>
+	</div> <!--end row -->
+		</div> <!-- end wrapper -->
+	</div> <!-- end main index -->
+
+</article>
+<!--////////////////////////////////////////////////////////////////////////
+  									SPECIAL
+////////////////////////////////////////////////////////////////////////-->
+<!--
+<article class='row' id='special'>
+	<ul class="small-block-grid-3">
+		<li><a href="">
+				<img src="img/sp1.jpg" alt="" />
+				<div>
+					<h2>Twin Lobster <small>Any Style</small></h2>
+					
+					<div class='price right'>$9.98</div>
+				</div>
+			</a>
+			<hr />
+		</li>
+		<li><a href="">
+				<img src="img/sp2.jpg" alt="" />
+				<div><h2>Steam Bass<small>live</small></h2>
+					
+					<div class='price right'>$9.98</div>
+				</div>
+			</a>
+			<hr />
+		</li>
+		<li><a href="">
+				<img src="img/sp3.jpg" alt="" />
+				<div>
+					<h2>Snail<small>Any Style</small></h2>
+					
+					<div class='price right'>$9.98</div>
+				</div>
+			</a>
+			<hr />
+		</li>
+	</ul>
+</article>
+-->
+<!--////////////////////////////////////////////////////////////////////////
+  									ABOUT
+////////////////////////////////////////////////////////////////////////-->
+<article id='about'>
+	<section>
+		<h1 class="svgWrapper left">
+					<object data="img/imgLogo.svg" type="image/svg+xml" class="svgContent">
+						<!-- <img src="img/imgLogo.jpg" alt="Good Fortune Restaurant" /> -->
+					</object>
+		</h1>
+		<p>
+			<strong>Good Fortune Restaurant</strong>
+is a well known Cantonese teahouse / restaurant in the flushing area.  located between <em>Kissena Blvd and Laburnum Ave</em>.  It is the most spacious and luxury destination for all your event needs.  Served variety of Cantonese <em>Dimsum</em>, Delicate Chinese <em>Cuisine</em>, and our pre-fixed </em>banquet</em> menu.  We welcome you enjoy your time with us.     
+		</p>
+	</section>
+	<section  class="row">
+		<div class="small-12 columns">
+			<table>
+				<tr>
+				  <th>DIM SUM</th>
+				  <th>WEEKDAY</th>
+				  <th>WEEKEND</th>
+				</tr>
+				<tr>
+				  <th>DIM SUM</th>
+				  <td>9:00 AM ~ 2:00 PM</td>
+				  <td>9:00 AM ~ 2:00 PM</td>
+				</tr>
+				<tr>
+				  <th>TAKE OUT</th>
+				  <td>11:00 AM ~ 3:00 PM</td>
+				  <td>11:00 AM ~ 3:00 PM</td>
+				</tr>
+				<tr>
+				  <th>DINNER</th>
+				  <td>4:00 PM ~ 10:00 PM</td>
+				  <td>4:00 PM ~ 10:00 PM</td>  
+				</tr>
+			</table>
+		</div>
+	</section>
+	<hr />
+</article>
+<!--////////////////////////////////////////////////////////////////////////
+  									DIM SUM
+////////////////////////////////////////////////////////////////////////-->
+<article id='dimsum'>
+	<section class="intro row">
+			<div class='imgWrapper'>
+				<img src="img/dimsum-isolate.jpg" alt="dimsum-isolate"/>
+			</div>
+			<h1>DIM<br />SUM</h1>
+		</div>
+	</section>
+	<section class="row">
+		<h2 class="small-12 columns">
+		Special Price
+		</h2>
+		<div class='small-6 columns dimsumPriceWrapper'>
+			<div class="dimsumPrice">	
+				<p><span class="dollarSign">$ </span>1<span class="cent">.11</span></p>
+				<hr />
+				<h3>Weekday <small>S M L Plates</small> </h3>
+			</div>
+		</div>
+		<div class='small-6 columns dimsumPriceWrapper'>
+			<div class="dimsumPrice">	
+				<p><span class="dollarSign">$ </span>2<span class="cent">.22</span></p>
+				<hr />		
+				<h3>Weekend <small>S M L Plates</small></h3>
+				</section>
+			</div>
+		</h2>
+	</section>
+	<section class="row">
+		<div class="small-12 info">	
+			<q cite="">traditional Chinese food consisting of a variety of items such as steamed or fried dumplings, pieces of cooked chicken, and rice balls served in small portions. 
+			</q>
+			<p>- here is an <a href="http://www.huffingtonpost.com/2013/09/27/dim-sum-guide_n_3997622.html">guide</a> to enjoy your dim sum experience
+			</p>
+		</div>
+	</section>
+	<section class="menu row hide">
+		<div class="small-4 columns">
+			<ul>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+			</ul>
+		</div>
+		<div class="small-4 columns">
+			<ul>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+			</ul>
+		</div>
+		<div class="small-4 columns">
+			<ul>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+			</ul>
+		</div>
+		<div class="small-4 columns">
+			<ul>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+			</ul>
+		</div>
+		<div class="small-4 columns">
+			<ul>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+			</ul>
+		</div>
+		<div class="small-4 columns">
+			<ul>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+				<li>stem bun</li>
+			</ul>
+		</div>
+	</section>
+	<section class="row">
+		<a class="small-12 columns linkMenu">
+			- SEE FULL MENU -
+		</a>
+	</section>
+	<hr />
+</article>
+<!--////////////////////////////////////////////////////////////////////////
+  									DINNER
+////////////////////////////////////////////////////////////////////////-->
+<article id='dinner'>
+	<section class="intro">
+			<div class='imgWrapper'>
+				<img src="img/rest-3.jpg" alt="dimsum-isolate"/>
+			</div>
+			<h1>DIN<br />NER</h1>
+		</div>
+	</section>
+	<section class="row">
+		<div class="small-12 info">	
+			<p>
+				We use the freshest ingredients directly from the market, to bring you the most delicate Chinese dinning experience.  Here you will find the most traditional Chinese cuisine, heartwarming service, and exceptional quality food.    
+			</p>
+		</div>
+	</section>
+	<section class="row">
+		<a class="small-12 columns linkMenu">
+			- SEE FULL MENU -
+		
+		<hr />
+		</a>
+	
+	</section>
+	<div class="hide">
+		<section id='appetizer'>
+			<h2>Appetizer</h2>
+		</section>
+		<section id='soup'>
+			<h2>Soup</h2>
+			<table></table>
+		</section>
+		<section id='special'>
+			<h2>Special</h2>
+			<table></table>
+		</section>
+		<section id='seafood'>
+			<h2>Seafood</h2>
+			<table></table>
+		</section>
+		<section id='chicken'>
+			<h2>Chicken</h2>
+			<table></table>
+		</section>
+		<section id='pork'>
+			<h2>Pork</h2>
+			<table></table>
+		</section>
+		<section id='beef'>
+			<h2>Beef</h2>
+			<table></table>
+		</section>
+		<section id='congee'>
+			<h2>Congee</h2>
+			<table></table>
+		</section>
+		<section id='rice'>
+			<h2>Rice</h2>
+			<table></table>
+		</section>
+		<section id='dessert'>
+			<h2>dessert</h2>
+			<table></table>
+		</section>
+	</div>
+	
+</article>
+<!--////////////////////////////////////////////////////////////////////////
+  									BANQUET
+////////////////////////////////////////////////////////////////////////-->
+<article id='banquet'>
+	<section class="intro">
+			<div class='imgWrapper'>
+				<img src="img/rest-1.jpg" alt="dimsum-isolate"/>
+			</div>
+			<h1><img src='img/deco.png' alt="" /> BANQUET <img src='img/deco-2.png' alt="" /></h1>
+		</div>
+	</section>
+	<section class="row">
+		<div class="small-12 columns" id='banquetPrice'>
+			<span id='banquetPrice1'>Starting From </span>
+			<span id='banquetPrice2'><span class='dollarSign'> $</span>388<sup>+</sup></span>
+			<span id='banquetPrice3'>per Table</span>
+		</div>
+	</section>
+	<section class="row">
+		<div class="small-12 info">
+			<ul>
+				<li>capacity: 78 table</li>
+				<li>free bus pick up*
+					<small>Chinatown / 8th Ave Brooklyn Only</small>
+				</li>
+				<li>free Harmony Olive Oil ( 2 liter )
+					<small>one per table</small>
+				</li>
+				<li>FREE customer parking</li>
+				<li>VIP private room available</li>
+			</ul>	
+		</div>
+	</section>
+	<section class="row">
+		<a class="small-12 columns linkMenu">
+			- SEE FULL MENU -
+		<hr />
+		</a>
+	
+	</section>
+</article>
+<!--////////////////////////////////////////////////////////////////////////
+  									SIDENAV
+////////////////////////////////////////////////////////////////////////-->
+<footer>
+	<p>
+		© 2014 | Good Fortune Restaurant, Inc.	
+	</p>
+	<nav class="hide">
+		<ul>
+			<li><a href="#main">Home</a></li>
+			<li><a href="#dimsum">Dim Sum</a></li>
+			<li><a href="#dinner">Dinner</a></li>
+			<li><a href="#banquet">Banquet</a></li>
+			<li><a href="#vip">VIP Room</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+</footer>
+<!--////////////////////////////////////////////////////////////////////////
+  									SIDENAV
+////////////////////////////////////////////////////////////////////////-->
+<aside id='sideNav' class="hide">
+	<nav>
+		<ul>
+			<li><a href="#main">Home</a></li>
+			<li><a href="#dimsum">Dim Sum</a></li>
+			<li><a href="#dinner">Dinner</a></li>
+			<li><a href="#banquet">Banquet</a></li>
+			<li><a href="#vip">VIP Room</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+</aside>

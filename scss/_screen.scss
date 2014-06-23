@@ -1,0 +1,66 @@
+@media screen and (min-width: 64.063em) {
+	#main {
+		position: relative;
+		background-image:url('../img/mainPage-filter.jpg');
+		background-size: cover;
+		//overflow: hidden;
+		#topbar {
+			width: 100%;
+			position: relative;
+			top:0;
+			z-index: 1000;
+			background: white;
+			ul {margin:1em 0; padding: 0;}
+			li {display: inline; margin: 0 1em; }
+			a {color: $grey;}
+		}
+		.zindexUp {
+			position: relative;
+			z-index: 2;	
+		}
+		#redBg {
+			background-color: $red; 
+			margin-top:300px;
+		}
+		#mainIndex {
+			
+		}
+		h1 {
+			margin: 0; padding: 0;
+			background: none;
+			.svgWrapper {
+				//width: 30%;
+				//float: left;
+				//padding-bottom: 10%;
+				margin: 1em;
+				text-align: left;
+			}
+		}
+		#mainDes {
+			
+		}
+		.pattern {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: 3;
+			background-image: url('../img/pattern.png');
+			background-repeat: repeat;
+		}
+		.videoWrapper {
+			top:0;
+			width: 100%; 
+			height: 100%; 
+			position: absolute;
+			z-index: 1;
+			video {
+				width: 100%;
+			}
+		}
+		h2 {
+			font-size: 4em;
+			font-weight: bold;
+			color: white;
+		}
+	}
+} // @media 

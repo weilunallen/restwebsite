@@ -1,0 +1,485 @@
+$dark : #373737;
+$light : #f0f0f0;
+$red : #770000;
+$grey : #6e6e6e;
+$gold : #e9d27f;
+
+$light : #f0f0f0;
+$light-1 : #e1e1e1;
+$light-2 : #afafaf;
+
+.activePage {
+	overflow-x: hidden;	
+}
+#mobileControl {
+		position: absolute;
+		top:0;
+		z-index: 9999;
+	.sandwich {
+		display:block;
+		color: $light;
+		background-color: $dark;
+		width: 3em;
+		margin: 10px;
+		border-radius: 3px;
+		text-align: center;
+		transition: all 1s ease;
+		i {
+			line-height: 3rem;
+			vertical-align: baseline;
+		}
+	}
+	.sandwich:hover {
+		background-color: black;
+	}
+	.langButton {
+		button {
+			display: inline-block;
+			margin: 10px;
+			border-radius: 3px;
+			width: 5em;
+			height: 5em;
+			line-height: 5em;
+			text-align: center;
+			padding: 0;
+			vertical-align: baseline;
+			i {
+				font-size: 2em;
+				text-decoration: none;
+				font-style: normal;
+			}
+		}
+	}
+}
+.bottomBar {
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	img {
+		position: relative;
+		margin: 0 auto;
+	}
+}
+.activePage {
+	position: absolute;
+	left:0px;
+	z-index: 8888;
+}
+#slideNav {
+	background: $dark;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	z-index: 1111;
+	>nav {
+		>ul {
+			margin: 0 auto;
+			padding: 0;
+			>li {
+				border-bottom: 1px solid #484848;
+				list-style: none;
+				>a {
+					display: inline-block;
+					width: 100%;
+					color: $light;
+					padding: .5em 0 .5em 1em;
+					background: $dark;
+					font-size: 1em;
+					line-height: 1.5em;
+					vertical-align: baseline;
+					
+				}
+				>a:hover {
+				background-color: $gold;
+				color: $red;
+				}
+			}
+		}
+	}
+}
+.keyFrame {
+		opacity: 0;
+	}
+.view {
+	position: relative;
+	z-index: 9999;
+}
+#intro {
+	background-image: url('../img/dragon.svg');
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: 150px -100px;
+	background-color: $red;	
+	#logoV {
+		padding-top: 10%;
+		position: relative;
+		width: auto;
+		height: 40%;
+		margin: 0 auto;
+		text-align: center;	
+		display: block;
+	}
+	#introTag {
+		margin:.5em auto 2em auto;
+		text-align: center;
+		li {
+			display: inline; 
+			font-size: .65em;
+			background: rgba(232,210,128,0.4);
+			text-align: center;
+			margin: 0 .15em;
+			padding: 9px 3px;
+			border-radius: 2px;
+			line-height: 2.75em;
+			a {
+				border: 2px solid $red;
+				padding: 5px;
+				border-radius: 2px;
+				background: rgba(232,210,128,0.8);
+				color: $red;
+				transition: all 1s ease;
+			}
+		}
+	}
+	#menuSelect {
+		position: relative;
+		margin-top: 5%;		
+		a {
+			padding: .5em 0;
+			display: block;
+			width: 80%;
+			background: none;
+			text-align: center;
+			margin:0 auto;
+			border: 2px solid #510000;
+			border-radius: 2px;
+			transition: all 1s ease;
+			margin-bottom: .5em;
+			background-color:rgba(0,0,0,0.2);
+			h2 {font-size: 1.5em; color: $light;
+				line-height: 1em;
+				padding: 0; margin: 0;
+			}
+			small {font-size: .5em; color: $light-2; padding: 0; margin: 0;
+				line-height: 1.25em;
+			}
+		}
+		a:nth-of-type(3n),
+		a:nth-of-type(4n) 
+		{
+			display: inline-block;
+			width: 40%;
+			border: 2px solid #510000;
+			background-color: #510000;
+			h3 {
+				color: white;
+				font-size: .75em;
+				line-height: 1em;
+				padding: 0;
+				margin: 0;
+			}
+			small {
+				color: $light-2;
+				font-size: .4em;
+				line-height: 1.25em;
+				padding: 0px;
+				margin: 0px;
+			}
+		}
+		a:hover {
+			border: 2px solid $gold;
+			background-color:rgba(0,0,0,0.5);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+/*
+.linkMenu {
+	text-align: center;
+	color: $dark;
+}
+.dollarSign {
+	font-size: 70%;
+}
+.cent {
+	font-size: 50%;
+	vertical-align: super
+}
+.secondButton {
+  	@include button(12rem, #a62200, false, false, false, false);
+}
+.thirdButton {
+	@include button(12rem, #9a2000, false, false, false, false);
+}
+.svgWrapper {
+	display: inline-block;
+	position: relative;
+	width: 95%;
+	padding-bottom: 28%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.svgContent {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; 
+	height: 50%;
+}
+h1,h2,h3,h4,h5, p {margin: 0; padding: 0;} 
+.groupMenu {
+	a {
+		padding: 0; margin: 0 auto; text-align: center;
+		line-height: 50px;
+		vertical-align: bottom;
+		border: none;
+		font-size: 1.25em;
+	}
+}
+
+#main {
+	h1 {
+		padding:1em .25em; margin: 0 auto; text-align: center;
+		background-image: url('../img/mainPage-filter.jpg');
+		background-color: $dark;
+		background-position: center center;
+		background-size: cover;
+	}
+	nav {
+		width: 100%;
+		padding: 0; margin: 0 auto;
+		ul{	
+				margin: 0;
+			li {
+				list-style: none;
+				text-align: center;
+				a {
+				line-height: 3em;
+				vertical-align: middle;
+				letter-spacing: 1px;
+				word-spacing: 3px;
+				} // end a
+			} // end li	
+			hr {
+				padding: none;
+				margin: 5px 0px;
+			}
+		} // end ul
+	} // end nav
+	#rsvp {
+		padding: 10px 10px;
+		form {
+			div {
+				label {display: inline; line-height: 1.5em;}
+				input[type=radio] {margin: 0; padding: 0;}
+			}
+			.radio {
+				display: block; line-height: 2em !important; vertical-align: middle;
+				margin-bottom: 1em; 
+				label {
+					display: inline; margin:0 0 0 1em; 
+				}
+			}
+		}
+	} //rsvp
+	#contact {
+		background-color: $red;
+	}
+	#map {
+		background-color: $dark;
+	}
+} // end #main
+#special {
+	padding: .25em;
+	li {
+		padding: .25em; margin: 0;
+		img {width: 100%;}
+		h2 {font-size: 1em; line-height: 1.5em;}
+		small {font-size: .8em; line-height: 1em; display: block;}
+		.price {font-size:1.25em;}
+		hr {margin: 0; margin-top:1.5em; }
+	}
+}
+#about {
+	padding: 1em;
+	position: relative;
+	p{
+		position: relative;
+		font-size: 1em;
+		line-height: 1.75em;
+		z-index: 2;
+	}
+	.svgWrapper {
+		width: 100px;
+		padding: 0;
+		margin: 5px 15px 0 5px;
+		vertical-align: middle;
+		overflow: hidden;
+		z-index: -1;
+		position: relative;
+	}
+	.svgContent {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%; 
+	}
+	table {width: 100%; margin-top: 1.5em; }
+}
+
+
+.intro {
+	position: relative;
+	margin:0 0 0 0;
+	.imgWrapper {
+		//margin-left:10%;
+		// padding: 0 .5em;
+		position: relative;
+		img {width: 100%; height: 100%; display: inline;}
+	}
+	h1 {	
+		background-color: white; 
+		position: absolute; 
+		text-align: center; 
+		padding: .3em .6em; 
+		color: $dark; 
+		font-family: Courier New, monospace; 
+		font-weight: normal; 
+		font-size: 2.5em;
+		line-height: 1.25em;
+		box-shadow: 2px 1px 20px 2px black;
+		border-radius: 2px;
+	}
+}
+.info {
+	padding: .5em 1.5em;
+	q {padding-bottom: .5em;}
+	p {line-height: 1em; padding-top:1em;}
+}
+.dimsumPriceWrapper:last-child {
+	padding-left: .25em !important;
+}
+.dimsumPriceWrapper:first-child {
+	padding-right: .25em !important; 
+}
+.dimsumPrice {
+	// border: 2px solid $red;
+	// box-shadow: 2px 1px 5px 1px $grey;
+	text-align: center;
+	line-height: 1em;
+	h3, small, p {}
+	h3 {
+		font-size: 1em;
+		line-height: 2em;
+	}
+	hr {margin: 0;}
+	small { line-height: 2em;
+	}
+	p {	line-height: 1em;
+		font-size: 3em;
+		//color: #ffff00;
+		font-style: italic;
+	}
+}
+#dimsum {
+	padding:1em;
+	.intro {
+		.imgWrapper {
+		width:100%;
+		}
+		h1 {
+		right:10%; top:30%; 
+		}
+	}
+}
+#dinner {
+	.intro {
+		.imgWrapper {width:100%; overflow: hidden; margin-left: 0;}
+	h1 {
+		left:20%; top:25%;
+	}
+	a { bottom : -25px; right: 5%;}	
+	}
+	p {padding-top:0; line-height: 1.5em;}
+} 
+#banquet {
+	padding:.5em;
+	background-image: url('../img/office.png');
+	background-repeat: repeat;
+	background-color: $dark;
+	color: white;
+	.intro {
+		.imgWrapper {
+		width:100%;
+		}
+		h1 {
+		font-size: 2em;
+		right:10%; top:45%; background: rgba(0,0,0,.8); color: $gold;
+		box-shadow: 2px 1px 20px 2px $grey;
+		img {
+			display: inline;
+			width: 1em;
+		}
+		}
+	}
+	#banquetPrice {
+		background-color: #1e1e1e;
+		color:$grey;
+		text-align: center;
+		margin: .5em 0;
+
+		#banquetPrice1 {}
+		#banquetPrice2 {
+			font-size: 3em; color: $gold; padding: 0 .25em; 
+			sup {position: absolute; font-size: .5em;}
+		}
+		#banquetPrice3 {}
+	}
+	p {
+		line-height: 1.75em; color: rgba(212,212,212,1); padding-top:0;
+	}
+	ul {font-size: 1em;
+		li {line-height: 2em;}
+	}
+	.linkMenu {
+			color: $grey;
+		hr {
+			color: none;
+			border: solid #414141;
+			border-width: 1px 0 0;
+		}
+	}
+}
+footer {
+	padding: .5em;
+	background-color: $red;
+	.svgWrapper {
+		width:80%;
+		display: block;
+		margin: .5em auto;
+		padding-bottom: 25%;
+	}
+	p {
+		display: block;
+		text-align: center;
+		color: rgba(243,243,243,1);
+	}
+	nav {
+		display: inline;
+		ul {
+			display: inline;
+			li {
+				display: inline;
+			}
+		}
+	}
+}
+*/

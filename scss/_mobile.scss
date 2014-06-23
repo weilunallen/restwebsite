@@ -192,6 +192,31 @@ body {
 		}
 	}
 }
+#about {
+	position: relative;
+	background-image: url('../img/paperTexture.jpg');
+	p{
+		padding: 1em;
+		position: relative;
+		font-size: 1em;
+		line-height: 1.75em;
+		z-index: 2;
+	}
+	.svgWrapper {
+		width: 100px;
+		margin: 5px 15px 0 5px;
+		vertical-align: middle;
+		overflow: hidden;
+		position: relative;
+	}
+	.svgContent {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	table {width: 100%; margin-top: 1.5em; }
+}
 
 
 
@@ -307,32 +332,6 @@ h1,h2,h3,h4,h5, p {margin: 0; padding: 0;}
 		.price {font-size:1.25em;}
 		hr {margin: 0; margin-top:1.5em; }
 	}
-}
-#about {
-	padding: 1em;
-	position: relative;
-	p{
-		position: relative;
-		font-size: 1em;
-		line-height: 1.75em;
-		z-index: 2;
-	}
-	.svgWrapper {
-		width: 100px;
-		padding: 0;
-		margin: 5px 15px 0 5px;
-		vertical-align: middle;
-		overflow: hidden;
-		z-index: -1;
-		position: relative;
-	}
-	.svgContent {
-		position: relative;
-		top: 0;
-		left: 0;
-		width: 100%; 
-	}
-	table {width: 100%; margin-top: 1.5em; }
 }
 
 

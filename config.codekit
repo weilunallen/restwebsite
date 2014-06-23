@@ -3945,6 +3945,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/paperTexture.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 181238,
+		"inputAbbreviatedPath": "\/img\/paperTexture.jpg",
+		"outputAbbreviatedPath": "\/img\/paperTexture.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/pattern.png": {
 		"fileType": 32768,
 		"ignore": 0,

@@ -83,24 +83,6 @@ function slideNav(h,w) {
 			}
 		);
 	}
-
-function width80(w) {
-	var width80 = $(".width80");
-	var objWidth = width80.css("width");
-	var objWidth = objWidth.replace("px","");
-	var distanceToCenter = (w-objWidth*.8)/2;	
-	
-	console.log(w);
-	console.log(objWidth);
-	
-	
-	/*
-width80.css({
-		"width":w*.8+"px",
-		"marginLeft":distanceToCenter
-	});
-*/
-}
 function introAnimation() {
 	$(".keyFrame").each(
 		function(index) {
@@ -119,11 +101,11 @@ function scrollPage(once) {
 	function() {
 		var now = $(document).scrollTop();
 		if(now>150 && once) {
-			var target = $("#dimsum");
+			var target = $("#about");
 			var pos = target.offset().top;
 			$('html,body').animate({
 				scrollTop: pos
-			}, 1000);
+			}, 500);
 			once = false;
 		}
 		if(now<10) {

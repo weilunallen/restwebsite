@@ -7,7 +7,12 @@ $gold : #e9d27f;
 $light : #f0f0f0;
 $light-1 : #e1e1e1;
 $light-2 : #afafaf;
-
+.page {
+	position: relative;
+}
+body {
+	overflow-x: hidden;	
+}
 .activePage {
 	overflow-x: hidden;	
 }
@@ -100,10 +105,6 @@ $light-2 : #afafaf;
 .keyFrame {
 		opacity: 0;
 	}
-.view {
-	position: relative;
-	z-index: 9999;
-}
 #intro {
 	background-image: url('../img/dragon.svg');
 	background-repeat: no-repeat;
@@ -155,10 +156,11 @@ $light-2 : #afafaf;
 			border-radius: 2px;
 			transition: all 1s ease;
 			margin-bottom: .5em;
-			background-color:rgba(0,0,0,0.2);
+			background-color:rgba(22,0,0,0.1);
 			h2 {font-size: 1.5em; color: $light;
 				line-height: 1em;
 				padding: 0; margin: 0;
+				letter-spacing: 3px;
 			}
 			small {font-size: .5em; color: $light-2; padding: 0; margin: 0;
 				line-height: 1.25em;
@@ -169,11 +171,9 @@ $light-2 : #afafaf;
 		{
 			display: inline-block;
 			width: 40%;
-			border: 2px solid #510000;
-			background-color: #510000;
 			h3 {
 				color: white;
-				font-size: .75em;
+				font-size: 1em;
 				line-height: 1em;
 				padding: 0;
 				margin: 0;
@@ -187,8 +187,8 @@ $light-2 : #afafaf;
 			}
 		}
 		a:hover {
-			border: 2px solid $gold;
-			background-color:rgba(0,0,0,0.5);
+			border: 2px solid #703d00;
+			background-color:rgba(0,0,0,0.4);
 		}
 	}
 }

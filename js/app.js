@@ -21,7 +21,7 @@ function page(h,w) {
 function slideNav(h,w) {
 
 	var controller = $(".sandwich");
-	var subject = $(".view");
+	var subject = $(".activePage");
 	var distance = w*.8;
 	var speed = 500;
 	var sandwich = $("#mobileControl");
@@ -114,19 +114,37 @@ function introAnimation() {
 		}
 	);
 }
-
+function scrollPage(once) {
+	$(document).scroll(
+	function() {
+		var now = $(document).scrollTop();
+		if(now>150 && once) {
+			var target = $("#dimsum");
+			var pos = target.offset().top;
+			$('html,body').animate({
+				scrollTop: pos
+			}, 1000);
+			once = false;
+		}
+		if(now<10) {
+			once = true;
+		}
+	});
+}
 
 
 $(document).ready(
 	function() {
 		winHight = $(window).innerHeight();
 		winWidth = $(window).innerWidth();
+		once = true;
 		if(winWidth > 64*16) {
 			largeScreen(winHight, winWidth);
 		} else {
 			page(winHight, winWidth); 		
 			introAnimation();	
 			slideNav(winHight, winWidth);
+			scrollPage(winHight);
 		}
 	}
 );

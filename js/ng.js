@@ -1,17 +1,17 @@
 angular
-	.module("onePage", ["ngCookies","ngRoute"])
+	.module("onePage", ["ngCookies"/* ,"ngRoute" */])
 	.controller("langCtrl", function langCtrl($scope, $cookies) 
 		{		
 			$scope.englishLibrary = function() {
 			// intro 
-			$scope.welcome = "WELCOME"
+			$scope.welcome = "Welcome"
 			$scope.lang = "En";
 			$scope.dimsum = "DIM SUM";
 			$scope.seafood = "SEAFOOD";
 			$scope.poultry = "POULTRY";
 			$scope.banquet = "BANQUET";
-			$scope.map = "DIRECTION";
-			$scope.tel = "TELEPHONE";
+			$scope.map = "Direction";
+			$scope.tel = "Telephone";
 			// menu
 			$scope.menu = "MENU"
 			$scope.home = "HOME";
@@ -64,7 +64,8 @@ angular
 					$scope.englishLibrary();
 				}
 			}	
-	})
+	});/*
+
 	 .controller('routeCtrl', function($scope, $route, $routeParams, $location,$cookies) {
      	$scope.$route = $route;
 	 	$scope.$location = $location;
@@ -77,7 +78,8 @@ angular
 			slideNav(winHight, winWidth);		
 			
 			if($scope.params.setLang==="en") {
-			} 
+				langCtrl.changLang;
+		} 
 				
 		});
 	 })
@@ -107,6 +109,7 @@ angular
 			
 		}
 	})
+*/
 	
 
  

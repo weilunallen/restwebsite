@@ -12,23 +12,77 @@
     <script src="bower_components/modernizr/modernizr.js" type="text/javascript"></script>
 </head>
 
-<body>
-    <!--////////////////////////////////////////////////////////////////////////
+<body ng-controller="langCtrl">
+<!--////////////////////////////////////////////////////////////////////////
                                     HOMEPAGE
 ////////////////////////////////////////////////////////////////////////-->
-
-    <article id='main' ng-controller="langCtrl">
-        <div class="activePage" ng-controller="routeCtrl">
-            <div ng-view class="view">	
-            </div>
-            <div id="mobileControl" class="keyFrame">
-    	<a class="sandwich">
-			<i class="fi-list size-24" ></i>
-		</a>
-		<div class="langButton">
-			<button ng-click="changeLang()"><i class="size-36">{{lang}}</i></button>
+	<div class="activePage">
+            <div class="page content" id="intro">
+				<object data="img/logo_v.svg" type="image/svg+xml" id="logoV" class="keyFrame">
+					<!-- <img src="fallback"/> -->
+				</object>
+				<ul id="introTag" class="keyFrame">
+					<li><a>{{dimsum}}</a></li>
+					<li><a>{{banquet}}</a></li>
+					<li><a>{{poultry}}</a></li>
+					<li><a>{{seafood}}</a></li>
+				</ul>
+				<div class="row" id="menuSelect">
+					<div class="text-center keyFrame">
+						<a href=""><h2>{{welcome}}</h2><small>[ ENGLISH VERSION ]</small></a>
+						<a href=""><h2>歡迎光臨</h2><small>[ CHINESE VERSION ]</small></a>
+						<a href="https://www.google.com/maps/@40.749679,-73.817934,17z"><h3>{{map}}</h3><small>[ 46-45 Kissena Blvd ]</small></a>
+						<a class="" href="tel:7188888998"><h3>{{tel}}</h3><small>[ 718.888.8998 ]</small></a>
+					</div>
+				</div>
+				<div class="bottomBar fullWidth"><img src="img/cloud.png" alt="Chinese Bow" class="keyFrame width80"></div>
+			</div>
+            <article id='about'>
+				<section>
+					<h1 class="svgWrapper left">
+								<object data="img/imgLogo.svg" type="image/svg+xml" class="svgContent">
+									<!-- <img src="img/imgLogo.jpg" alt="Good Fortune Restaurant" /> -->
+								</object>
+					</h1>
+					<p>
+						<strong>Good Fortune Restaurant</strong>
+			is a well known Cantonese teahouse / restaurant in the flushing area.  located between <em>Kissena Blvd and Laburnum Ave</em>.  It is the most spacious and luxury destination for all your event needs.  Served variety of Cantonese <em>Dimsum</em>, Delicate Chinese <em>Cuisine</em>, and our pre-fixed </em>banquet</em> menu.  We welcome you enjoy your time with us.     
+					</p>
+				</section>
+				<section  class="row">
+					<div class="small-12 columns">
+						<table>
+							<tr>
+							  <th>DIM SUM</th>
+							  <th>WEEKDAY</th>
+							  <th>WEEKEND</th>
+							</tr>
+							<tr>
+							  <th>DIM SUM</th>
+							  <td>9:00 AM ~ 2:00 PM</td>
+							  <td>9:00 AM ~ 2:00 PM</td>
+							</tr>
+							<tr>
+							  <th>TAKE OUT</th>
+							  <td>11:00 AM ~ 3:00 PM</td>
+							  <td>11:00 AM ~ 3:00 PM</td>
+							</tr>
+							<tr>
+							  <th>DINNER</th>
+							  <td>4:00 PM ~ 10:00 PM</td>
+							  <td>4:00 PM ~ 10:00 PM</td>  
+							</tr>
+						</table>
+					</div>
+				</section>
+				<hr />
+</article>
 		</div>
-	</div>
+        <div id="mobileControl" class="keyFrame">
+			<a class="sandwich">
+				<i class="fi-list size-24" ></i>
+			</a>
+		</div>
         <div class="page" id="slideNav">
             <nav>
                 <ul>
@@ -52,11 +106,10 @@
 			<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript">
 			</script> <script src="js/angular.min.js" type="text/javascript">
 			</script> <script src="js/ng-cookie.min.js" type="text/javascript">
-			</script> <script src="js/ng-route.min.js" type="text/javascript">
+/* 			</script> <script src="js/ng-route.min.js" type="text/javascript"> */
 			</script> <script src="bower_components/foundation/js/foundation.min.js" type="text/javascript">
 			</script> <script src="js/app.js" type="text/javascript">
 			</script> <script src="js/ng.js" type="text/javascript">
 			</script>
-    </article>
 </body>
 </html>

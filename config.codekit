@@ -3868,6 +3868,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/dimsumPlaceholder.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49375,
+		"inputAbbreviatedPath": "\/img\/dimsumPlaceholder.jpg",
+		"outputAbbreviatedPath": "\/img\/dimsumPlaceholder.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/east.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -3875,6 +3886,17 @@
 		"initialSize": 72995,
 		"inputAbbreviatedPath": "\/img\/east.jpg",
 		"outputAbbreviatedPath": "\/img\/east.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/east2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 89039,
+		"inputAbbreviatedPath": "\/img\/east2.jpg",
+		"outputAbbreviatedPath": "\/img\/east2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4117,6 +4139,17 @@
 		"initialSize": 91011,
 		"inputAbbreviatedPath": "\/img\/sp3.jpg",
 		"outputAbbreviatedPath": "\/img\/sp3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/storefront.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 124815,
+		"inputAbbreviatedPath": "\/img\/storefront.jpg",
+		"outputAbbreviatedPath": "\/img\/storefront.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

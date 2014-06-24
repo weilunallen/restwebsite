@@ -16,98 +16,217 @@
 <!--////////////////////////////////////////////////////////////////////////
                                     HOMEPAGE
 ////////////////////////////////////////////////////////////////////////-->
-	<div class="activePage">
-            <div class="page content" id="intro">
-				<object data="img/logo_v.svg" type="image/svg+xml" id="logoV" class="keyFrame">
+	<div id="mainWrapper">
+		<article class="page content" id="intro">
+			<object data="img/logo_v.svg" type="image/svg+xml" id="logoV" class="keyFrame">
 					<!-- <img src="fallback"/> -->
-				</object>
-				<ul id="introTag" class="keyFrame">
-					<li><a>{{dimsum}}</a></li>
-					<li><a>{{banquet}}</a></li>
-					<li><a>{{poultry}}</a></li>
-					<li><a>{{seafood}}</a></li>
-				</ul>
-				<div class="row" id="menuSelect">
-					<div class="text-center keyFrame">
-						<a href=""><h2>{{welcome}}</h2><small>[ ENGLISH VERSION ]</small></a>
-						<a href=""><h2>歡迎光臨</h2><small>[ CHINESE VERSION ]</small></a>
-						<a href="https://www.google.com/maps/@40.749679,-73.817934,17z"><h3>{{map}}</h3><small>[ 46-45 Kissena Blvd ]</small></a>
-						<a class="" href="tel:7188888998"><h3>{{tel}}</h3><small>[ 718.888.8998 ]</small></a>
-					</div>
+			</object>
+			<ul id="introTag" class="keyFrame">
+				<li><a>{{dimsum}}</a></li>
+				<li><a>{{banquet}}</a></li>
+				<li><a>{{poultry}}</a></li>
+				<li><a>{{seafood}}</a></li>
+			</ul>
+			<div class="row" id="menuSelect">
+				<div class="text-center keyFrame">
+					<a href="" ng-click="changeLang('english')"><h2>{{welcome}}</h2><small>[ ENGLISH VERSION ]</small></a>
+					<a href="" ng-click="changeLang('chinese')"><h2>歡迎光臨</h2><small>[ CHINESE VERSION ]</small></a>
+					<a href="https://www.google.com/maps/@40.749679,-73.817934,17z"><h3>{{map}}</h3><small>[ 46-45 Kissena Blvd ]</small></a>
+					<a class="" href="tel:7188888998"><h3>{{tel}}</h3><small>[ 718.888.8998 ]</small></a>
 				</div>
-				<div class="bottomBar fullWidth"><img src="img/cloud.png" alt="Chinese Bow" class="keyFrame width80"></div>
 			</div>
+			<div class="bottomBar fullWidth"><img src="img/cloud.png" alt="Chinese Bow" class="keyFrame width80"></div>
 			
-<!--////////////////////////////////////////////////////////////////////////
-                                    DIMSUM
-////////////////////////////////////////////////////////////////////////-->			
-			
-            <article id='about' class="page">
-				<section>
-					<h1 class="svgWrapper left">
-								<object data="img/imgLogo.svg" type="image/svg+xml" class="svgContent">
-									<!-- <img src="img/imgLogo.jpg" alt="Good Fortune Restaurant" /> -->
-								</object>
-					</h1>
-					<p>
-						<strong>Good Fortune Restaurant</strong>
-			is a well known Cantonese teahouse / restaurant in the flushing area.  located between <em>Kissena Blvd and Laburnum Ave</em>.  It is the most spacious and luxury destination for all your event needs.  Served variety of Cantonese <em>Dimsum</em>, Delicate Chinese <em>Cuisine</em>, and our pre-fixed </em>banquet</em> menu.  We welcome you enjoy your time with us.     
-					</p>
-				</section>
-				<section  class="row">
-					<div class="small-12 columns">
-						<table>
-							<tr>
-							  <th>DIM SUM</th>
-							  <th>WEEKDAY</th>
-							  <th>WEEKEND</th>
-							</tr>
-							<tr>
-							  <th>DIM SUM</th>
-							  <td>9:00 AM ~ 2:00 PM</td>
-							  <td>9:00 AM ~ 2:00 PM</td>
-							</tr>
-							<tr>
-							  <th>TAKE OUT</th>
-							  <td>11:00 AM ~ 3:00 PM</td>
-							  <td>11:00 AM ~ 3:00 PM</td>
-							</tr>
-							<tr>
-							  <th>DINNER</th>
-							  <td>4:00 PM ~ 10:00 PM</td>
-							  <td>4:00 PM ~ 10:00 PM</td>  
-							</tr>
-						</table>
-					</div>
-				</section>
-				<hr />
-</article>
-		</div>
-        <div id="mobileControl" class="keyFrame">
+		</article><!--end intro-->
+		<div class="keyFrame mobileControl">
 			<a class="sandwich">
 				<i class="fi-list size-24" ></i>
 			</a>
 		</div>
-        <div class="page" id="slideNav">
-            <nav>
-                <ul>
-                	<li><a href="">{{menu}}</a></li>
-                    <li><a href="">{{home}}</a></li>
+<!--////////////////////////////////////////////////////////////////////////
+                                    ABOUT
+////////////////////////////////////////////////////////////////////////-->			
+		<article id='about' class="page">
+			<section>
+				<p>
+					<strong>Good Fortune Restaurant</strong>
+					is a well known local Cantonese teahouse / restaurant in the heart of flushing, New York.  located between <em>Kissena Blvd and Laburnum Ave</em>.  It is the most spacious and luxurious destination for all your Chinese food cravings.  Served varieties of Cantonese <em>Dimsums</em>, Delicate Chinese <em>Cuisines</em>, and our pre-fixed </em>banquet</em> menu.  We welcome you enjoy your time with us.   
+				</p>
+			</section>
 
-                    <li><a href="/#/dimsum">{{dimsum}}</a></li>
+			<section  class="row" id="timeTable">
+				<div class="small-12 columns">
+					<table>
+						<caption>Business Hour</caption>
+						<tr>
+						  <th></th>
+						  <th>WEEKDAY</th>
+						  <th>WEEKEND</th>
+						</tr>
+						<tr>
+						  <th>DIM SUM</th>
+						  <td>9:00 AM ~ 2:00 PM</td>
+						  <td>9:00 AM ~ 2:00 PM</td>
+						</tr>
+						<tr>
+						  <th>TAKE OUT</th>
+						  <td>11:00 AM ~ 3:00 PM</td>
+						  <td>11:00 AM ~ 3:00 PM</td>
+						</tr>
+						<tr>
+						  <th>DINNER</th>
+						  <td>4:00 PM ~ 10:00 PM</td>
+						  <td>4:00 PM ~ 10:00 PM</td>  
+						</tr>
+					</table>
+				</div>
+			</section>
+			<div  class="mobileControl">
+				<a class="sandwich">
+					<i class="fi-list size-24" ></i>
+				</a>
+			</div>
+		</article>
+        
+<!--////////////////////////////////////////////////////////////////////////
+                                    DIMSUM
+////////////////////////////////////////////////////////////////////////-->			
+		<article class="page" id="dimsum">
+			<section class="row">
+					<div class='imgWrapper'>
+						<img src="img/dimsumPlaceholder.jpg" alt="dimsum-isolate"/>
+					</div>
+					<h1>DIMSUM</h1>
+			</section>
+			<section class="row">
+				<h2 class="small-12 columns">
+				Special Price
+				</h2>
+				<div class='small-6 columns dimsumPriceWrapper'>
+					<div class="dimsumPrice">	
+						<p><span class="dollarSign">$ </span>1<span class="cent">.11</span></p>
+						<hr />
+						<h3>Weekday <small>S M L Plates</small> </h3>
+					</div>
+				</div>
+				<div class='small-6 columns dimsumPriceWrapper'>
+					<div class="dimsumPrice">	
+						<p><span class="dollarSign">$ </span>2<span class="cent">.22</span></p>
+						<hr />		
+						<h3>Weekend <small>S M L Plates</small></h3>
+				</section>
+			<section class="row">
+				<div class="small-12 info">	
+					<q cite="">traditional Chinese food consisting of a variety of items such as steamed or fried dumplings, pieces of cooked chicken, and rice balls served in small portions. 
+					</q>
+					<p>- here is an <a href="http://www.huffingtonpost.com/2013/09/27/dim-sum-guide_n_3997622.html">guide</a> to enjoy your dim sum experience
+					</p>
+				</div>
+			</section>
+			<section class="menu row hide">
+				<div class="small-4 columns">
+					<ul>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+					</ul>
+				</div>
+				<div class="small-4 columns">
+					<ul>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+					</ul>
+				</div>
+				<div class="small-4 columns">
+					<ul>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+					</ul>
+				</div>
+				<div class="small-4 columns">
+					<ul>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+					</ul>
+				</div>
+				<div class="small-4 columns">
+					<ul>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+					</ul>
+				</div>
+				<div class="small-4 columns">
+					<ul>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+						<li>stem bun</li>
+					</ul>
+				</div>
+			</section>
+			<section class="row">
+				<a class="small-12 columns linkMenu">
+					- SEE FULL MENU -
+				</a>
+			</section>
+			<hr />
+			 <div class="mobileControl">
+					<a class="sandwich">
+						<i class="fi-list size-24" ></i>
+					</a>
+			</div>
+		</article>
+	</div>
+<!--////////////////////////////////////////////////////////////////////////
+                                    SLIDE NAV
+////////////////////////////////////////////////////////////////////////-->			
+    <article class="page" id="slideNav">
+        <nav>
+            <ul>
+            	<li><a href="">{{menu}}</a></li>
+                <li><a href="">{{home}}</a></li>
 
-                    <li><a href="">{{takeout}}<small> {{takeoutSmall}}</small></a></li>
+                <li><a href="/#/dimsum">{{dimsum}}</a></li>
 
-                    <li><a href="">{{dinner}}</a></li>
+                <li><a href="">{{takeout}}<small> {{takeoutSmall}}</small></a></li>
 
-                    <li><a href="">{{banquet}}</a></li>
+                <li><a href="">{{dinner}}</a></li>
 
-                    <li><a href="">{{contact}}</a></li>
+                <li><a href="">{{banquet}}</a></li>
 
-                    <li><a href="">{{rsvp}} <small>{{rsvpSmall}}</small></a></li>
-                </ul>
-            </nav>
-        </div>
+                <li><a href="">{{contact}}</a></li>
+
+                <li><a href="">{{rsvp}} <small>{{rsvpSmall}}</small></a></li>
+            </ul>
+        </nav>
+    </article>
 			<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript">
 			</script> <script src="js/angular.min.js" type="text/javascript">
 			</script> <script src="js/ng-cookie.min.js" type="text/javascript">

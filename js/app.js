@@ -11,6 +11,48 @@ function largeScreen(h,w) {
 		w*(9/16)
 	);	
 }
+
+function pagePosition(w) {
+	var page = $('.page:not(#slideNav)').not(); 
+	page.each(
+		function(index) {
+			var thisPage = page.eq(index);
+			var thisPos = w*index;
+			thisPage.css({"left" : thisPos+"px"});
+			console.log(thisPos);
+		}
+	); 
+}
+
+function aboutPage() {
+	$("#about p").animate(
+		{"marginTop":"50px",
+		 "opacity":"1"
+		}, 1200
+	);
+
+	$("#timeTable").hover(
+		function() {
+			$(this).animate(
+				{"bottom":"0px"}, 350,
+				function() {
+						$(this).animate(
+						{"bottom":"-10px"}, 300);
+				}
+			);
+		}, function() {
+			$(this).animate({"bottom":"-7em"}, 400,
+				function() {
+					$(this).animate(
+						{"bottom":"-6em"}, 300
+					);
+				}
+			);
+		}
+	);
+}
+
+
 function page(h,w) {
 	var page = $(".page");
 	var fullWidth = $(".fullWidth");
@@ -21,7 +63,7 @@ function page(h,w) {
 function slideNav(h,w) {
 
 	var controller = $(".sandwich");
-	var subject = $(".activePage");
+	var subject = $("#mainWrapper");
 	var distance = w*.8;
 	var speed = 500;
 	var sandwich = $("#mobileControl");
@@ -97,7 +139,8 @@ function introAnimation() {
 	);
 }
 function scrollPage(once) {
-	$(document).scroll(
+	/*
+$(document).scroll(
 	function() {
 		var now = $(document).scrollTop();
 		if(now>150 && once) {
@@ -112,6 +155,7 @@ function scrollPage(once) {
 			once = true;
 		}
 	});
+*/
 }
 
 
@@ -123,10 +167,12 @@ $(document).ready(
 		if(winWidth > 64*16) {
 			largeScreen(winHight, winWidth);
 		} else {
-			page(winHight, winWidth); 		
+			page(winHight, winWidth); 	
+			pagePosition(winWidth);	
 			introAnimation();	
 			slideNav(winHight, winWidth);
 			scrollPage(winHight);
+			aboutPage()
 		}
 	}
 );

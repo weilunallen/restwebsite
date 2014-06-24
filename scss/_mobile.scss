@@ -8,7 +8,8 @@ $light : #f0f0f0;
 $light-1 : #e1e1e1;
 $light-2 : #afafaf;
 .page {
-	position: relative;
+	position: absolute;
+	top: 0;
 }
 body {
 	overflow-x: hidden;	
@@ -16,7 +17,7 @@ body {
 .activePage {
 	overflow-x: hidden;	
 }
-#mobileControl {
+.mobileControl {
 		position: absolute;
 		top:0;
 		z-index: 9999;
@@ -65,7 +66,7 @@ body {
 		margin: 0 auto;
 	}
 }
-.activePage {
+#mainWrapper {
 	position: absolute;
 	left:0px;
 	z-index: 8888;
@@ -193,31 +194,46 @@ body {
 	}
 }
 #about {
-	position: relative;
-	background-image: url('../img/paperTexture.jpg');
+	position: absolute;
+	background-image: url("../img/storefront.jpg");
+	background-position: center bottom;
+	background-size: cover;
+	overflow-y: hidden;
 	p{
+		margin-top: -30px;
 		padding: 1em;
 		position: relative;
 		font-size: 1em;
 		line-height: 1.75em;
 		z-index: 2;
+		opacity: 0;
+		strong {
+			color: $red;
+		}
 	}
-	.svgWrapper {
-		width: 100px;
-		margin: 5px 15px 0 5px;
-		vertical-align: middle;
-		overflow: hidden;
-		position: relative;
+	#timeTable {
+		position: absolute;
+		bottom:-6em;
+		table {
+			width: 100%;
+			padding: 0;
+			margin: 0 auto;
+			caption{
+				background: $red;
+				color: $light;
+				font-size: 1em;
+				text-align: left;
+				padding: 10px;
+				width: 30%;
+			}
+		}	
 	}
-	.svgContent {
-		position: relative;
-		top: 0;
-		left: 0;
-		width: 100%;
-	}
-	table {width: 100%; margin-top: 1.5em; }
 }
-
+#dimsum {
+	position: absolute;
+	background-position: center bottom;
+	background-size: cover;
+}
 
 
 

@@ -52,6 +52,33 @@ function aboutPage() {
 	);
 }
 
+function nextPage() {
+
+	var pages = new Array();
+	var pages = ["intro","about","dimsum"]; // define array
+	var count = page.length;
+	var i = 0;
+	
+	for(i; i<count; i++) {
+		var el = pages[i];
+	}
+
+	
+
+
+	$(".swipe").swipe({
+		swipe:function(event, direction, distance, duration, fingerCount) {
+		
+		if(
+			$(this).attr('id')==="about" 
+		) {
+			console.log("this is "+$(this).attr('id')+" page");
+		}
+   
+   
+   
+  }});
+}
 
 function page(h,w) {
 	var page = $(".page");
@@ -172,7 +199,8 @@ $(document).ready(
 			introAnimation();	
 			slideNav(winHight, winWidth);
 			scrollPage(winHight);
-			aboutPage()
+			aboutPage();
+			nextPage();
 		}
 	}
 );

@@ -7,6 +7,16 @@ $gold : #e9d27f;
 $light : #f0f0f0;
 $light-1 : #e1e1e1;
 $light-2 : #afafaf;
+
+.tempButton {
+	@extend .sandwich;
+	i {
+		line-height: 3rem;
+		vertical-align: baseline;
+	}
+}
+
+
 .page {
 	position: absolute;
 	top: 0;
@@ -70,6 +80,8 @@ body {
 	position: absolute;
 	left:0px;
 	z-index: 8888;
+	overflow-x: hidden;
+	
 }
 #slideNav {
 	background: $dark;

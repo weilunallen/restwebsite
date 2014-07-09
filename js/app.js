@@ -2,26 +2,58 @@
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
 function expend(x) {
-	console.log(x);
 	$('.popDown').hide();
 	$(x).toggle();
 }
 function largeScreen(h,w) {
+/*
 	$('#main').height(
 		w*(9/16)
 	);	
+*/
 }
 
 function pagePosition(w) {
-	var page = $('.page:not(#slideNav)').not(); 
+	var page = $('.page:not(#slideNav)'); 
+	var pageIds = new Array;
+	var slideMe = $("#slideMe");
+	
+	
+	//ini setup create data for postion in object
 	page.each(
 		function(index) {
 			var thisPage = page.eq(index);
 			var thisPos = w*index;
 			thisPage.css({"left" : thisPos+"px"});
-			console.log(thisPos);
+			var pageName = thisPage.attr('id');
+			pageIds.push(
+				{
+					name : pageName,
+					pos : thisPos
+				}
+			); 
 		}
-	); 
+	);
+	
+	slideMe.click(
+		function() {
+			for(pageId in pageIds) {
+				// get the anme of the object 
+				console.log(pageId);
+			}
+
+			
+		}
+	);
+		
+	page.each(
+		function(index) {
+			
+		}
+	)
+	
+	
+	 
 }
 
 function aboutPage() {
@@ -74,17 +106,16 @@ function nextPage() {
 		) {
 			console.log("this is "+$(this).attr('id')+" page");
 		}
-   
-   
-   
   }});
 }
 
 function page(h,w) {
 	var page = $(".page");
+	var wrapper = $("#mainWrapper");
 	var fullWidth = $(".fullWidth");
-	page.height(h);
-	page.width(w);
+	page.height(h).width(w);
+	wrapper.height(h).width(w);
+	
 	fullWidth.width(w);
 }
 function slideNav(h,w) {
@@ -145,7 +176,6 @@ function slideNav(h,w) {
 	$(".content").click(
 			function() {
 				if (window.slideStatus === "1") {
-				console.log("number");
 				controller.click();
 				
 				}
